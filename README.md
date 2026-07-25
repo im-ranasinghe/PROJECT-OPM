@@ -6,7 +6,7 @@ This project ships **two independent implementations** of the same idea, built w
 
 | | Web App | Python App |
 |---|---|---|
-| Folder | `src/` | `opmotitor/` |
+| Folder | `src/` | `opmonitor/` |
 | Stack | React + TypeScript + Vite | Python + Streamlit + OpenCV |
 | Pose engine | MediaPipe Pose (runs in-browser, client-side) | MediaPipe Pose (runs locally via OpenCV) |
 | Run with | `npm run dev` | `streamlit run app.py` |
@@ -35,7 +35,7 @@ You can use either one on its own — they don't depend on each other.
 * MediaPipe Pose & Camera Utils (loaded via CDN, runs entirely client-side)
 * Web Audio API for synthesized alarm sounds (no audio files needed)
 
-**Python App** (`opmotitor/`)
+**Python App** (`opmonitor/`)
 * Python 3.9–3.11
 * Streamlit (UI)
 * OpenCV (webcam capture)
@@ -66,7 +66,7 @@ Open the local URL printed in your terminal (typically `http://localhost:3000`).
 In a separate terminal, from the repo root:
 
 ```bash
-cd opmotitor
+cd opmonitor
 pip install -r requirements.txt
 streamlit run app.py
 ```
